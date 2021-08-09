@@ -1,0 +1,484 @@
+.body
+{
+    background: whitesmoke;
+}
+.left
+{
+    display: inline-block;
+    position: absolute;
+    left: 11rem;
+    top: 2.5rem;
+}
+.mid
+{
+    display: block;
+    width: 39%;
+    margin: 30px 700px;
+}
+.right
+{
+    display: inline-block;
+    position: absolute;
+    right: 11rem;
+    top: 2rem;
+    /* border: 2px solid red; */
+}
+#rightsubmit
+{
+    color: white;
+    border-radius: 0.3rem;
+    background-color: rgba(248, 71, 17, 0.918);
+    padding: 1rem;
+    /* margin: 0px; */
+    width: 8rem;
+}
+.navbar
+{
+    display: inline-block;
+}
+.navbar li
+{
+    display: inline-block;
+    font-size: 1.2rem;
+}
+.navbar li a
+{
+    text-decoration: none;
+    padding: 28px 20px;
+
+    color: black;
+}
+.navbar li a:hover,.navbar li a.active
+{
+    color: orange;
+    text-decoration: underline;
+}
+
+
+
+/* section1 */
+
+.section1
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10rem;
+}
+.section1left
+{
+    margin-top: 6rem;
+}
+.hr
+{
+    color: orange;
+}
+.heading1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.9rem;
+}
+.para1
+{
+    color: rgb(131, 123, 123);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.para2
+{
+    color: rgb(131, 123, 123);
+}
+.explore
+{
+    margin-top: 3rem;
+}
+#explore
+{
+    margin-top: 40px;
+    color: white;
+    border-radius: 4px;
+    width: 8rem;
+    background-color: rgba(248, 71, 17, 0.918);
+    padding: 12px;
+    margin: 0px;
+}
+
+/* latest blogs wala section */
+.section3
+{
+    
+    position: relative;
+    /* bottom: 120px;
+    height: 740px;
+    width: 1100px; */
+    bottom: 7rem;
+    height: 50rem;
+    width: 72rem;
+    margin: auto;
+    margin-top: 30px;
+    padding: 15px;
+    z-index: 10px;
+    /* border: 1px solid black; */
+    background-color: white;
+    border-radius: 10px;
+}
+.latestblogs
+{
+    font-size:2rem;
+    margin-top: 4%;
+    margin-left: 50px;
+}
+.viewall
+{
+    float: right;
+    width: 100px;
+    margin-top: 0%;
+    padding-top: 5px;
+    color: white;
+    border-radius: 4px;
+    margin-right: 50px;
+    background-color: rgba(248, 71, 17, 0.918);
+   
+}
+.hh1
+{
+    color: black;
+}
+.grid
+{
+    color: rgb(131, 123, 123);
+    display: grid;
+    margin-left: 50px;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.grid2,.grid5,.grid8
+{
+    border-right: 1px solid rgb(170, 163, 163);
+    height: 150px;
+}
+.grid3,.grid6,.grid9
+{
+    margin-left: 10px;
+}
+.view
+{
+    color: white;
+    border: 1px solid rgba(248, 71, 17, 0.918);
+    background: rgba(248, 71, 17, 0.918);
+    border-radius: 3px;
+    width: 6rem;
+    height: 40px;
+    margin-left: 75%;
+}
+#show
+{
+    margin: 0% 40%;
+    height: 40px;
+    width: 9rem;
+    color: orange;
+    border: 1px solid orange;
+    background: white;
+    border-radius: 3px;
+}
+
+
+/* blog post wala secton start*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+.blogpost
+{
+    text-align: center;
+    margin-top: -50px;
+}
+   .container11{ 
+    display: flex;
+    min-height: 100vh; 
+    align-items: center;
+    justify-content: center; 
+    background: #f2f2f2; 
+    position: relative;
+   }
+  .container11::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: none;
+    clip-path: inset(47% 0 0 0);
+    z-index: -1;
+    height: 100%;
+   } 
+  ::selection{
+    background: none;
+    color: #fff;
+  }
+  .container{
+    max-width: 950px;
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 0;
+  }
+  .container .main-card{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200%;
+    transition: 1s;
+    height: 500px;
+  }
+  #two:checked ~ .main-card{
+    margin-left: -100%;
+  }
+  .container .main-card .cards{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: space-between;
+    height: 400px;
+  }
+  .main-card .cards .card{
+    width: calc(100% / 3 - 10px);
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+  }
+  .main-card .cards .card:hover{
+    transform: translateY(-15px);
+  }
+  .cards .card .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+  }
+  .card .content .tittle1{
+      display: flex;
+      justify-content: left;
+      font-size: 15px;
+      text-align: justify;
+      font-weight:normal;
+      color: orange;
+  }
+  .card .content .tittle2{
+      font-weight: lighter;
+      font-size: 14px;
+      color: gainsboro;
+      padding-left: 4px;
+  }
+  .card .content .tittle3{
+      font-size: 15px;
+      font-weight: bold;
+      padding-top: 19px;
+  
+  }
+  .card .content .tittle3 p{
+      padding: 4px;
+  }
+  .card .content .tittle4{
+      font-size: 14px;
+      font-weight: lighter;
+      padding-top: 30px;
+      color: gainsboro;
+      
+  }
+  .card .content .readmore{
+    padding-top: 99px;
+  }
+  .button{
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+  }
+  .btn {
+          background-color: white; 
+          color: black; 
+           border: 2px solid orange;
+           
+        }
+        .button1 label{
+            height: 15px;
+            width: 15px;
+            border-radius: 20px;
+            background: #fff;
+            margin: 0 4px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+          }
+          .button1 label.active{
+            width: 35px;
+          }
+          #one:checked ~ .button1 .one{
+            width: 35px;
+          }
+          #one:checked ~ .button1 .two{
+            width: 15px;
+          }
+          #two:checked ~ .button1 .one{
+            width: 15px;
+          }
+          #two:checked ~ .button1 .two{
+            width: 35px;
+          }
+          input[type="radio"]{
+            display: none;
+          }
+  @media (max-width: 768px) {
+    .main-card .cards .card{
+      margin: 20px 0 10px 0;
+      width: calc(100% / 2 - 10px);
+    }
+  }
+  @media (max-width: 600px) {
+    .main-card .cards .card{
+      /* margin: 20px 0 10px 0; */
+      width: 100%;
+    }
+  } 
+/* blog post wala section end */
+ /* Instagram feeds wala section  */
+.instaheading
+{
+    text-align: center;
+}
+.instagramfeeds
+{
+    
+    height: 700px;
+    display: grid;
+    margin-left: 160px;
+    grid-template-columns: repeat(4,auto);
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 195px 195px 1fr;
+}
+.dabba2
+{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+/* .dabba8
+{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+} */
+/*  subscribe wala section  */
+.subscribe
+{
+    text-align: center;
+}
+/* ye btn ke changes ha */
+.emailchanges
+{
+    height: 3rem;
+    width: 28rem;
+    background: lightgray;
+    padding-left: 20px;
+    border: whitesmoke;
+}
+.parasubs1
+{
+    color: rgb(131, 123, 123);
+    margin: 10px;
+    margin-top: 30px;
+}
+.parasubs2
+{
+    color: rgb(131, 123, 123);
+    margin-bottom: 20px;
+}
+.subchanges
+{
+    /* margin: 1rem; */
+    height: 3rem;
+    margin-left: -10px;
+    width: 9rem;
+    background: rgba(248, 71, 17, 0.918);
+    color: whitesmoke;
+}
+/* Links */
+.links
+{
+    display: flex;
+    height:450px;
+    width: 80rem;
+    padding: 2rem;
+    margin-left: 10rem;
+    border-bottom: 2px solid rgb(131, 123, 123);
+}
+/* box */
+.box
+{
+    margin: 3rem;
+}
+.c1
+{
+    margin-top: 10px;
+    color: rgb(131, 123, 123);
+    padding: 6px;
+}
+
+/* socials */
+.socials
+{
+    margin-top: 20px;
+}
+/* .fa2,.fa3
+{
+    height: 10px;
+    margin: 10px;
+    padding: 30px;
+    border: 1px solid orange;
+    border-radius: 60px;
+} */
+
+.fa1,.fa2,.fa3
+{
+    margin: 30px 15px 15px 15px;
+    padding: 10px;
+    height: 40px;
+    border: 1px solid orange;
+    border-radius: 50%;
+}
+.fa1
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 55%;
+}
+/* footer */
+.footer
+{
+    color: rgb(131, 123, 123);
+    padding:3rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* media queries */
+@media only screen  and (max-width:768px)
+{
+   
+    
+}
